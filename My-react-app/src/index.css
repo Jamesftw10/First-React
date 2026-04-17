@@ -1,0 +1,74 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  border-bottom: 1px solid hsl(0, 0%, 0%, 0.1);
+
+  ul li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  ul {
+    display: flex;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .Flex-Align-Css {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+
+  }
+
+  h2 {
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+  }
+
+  button {
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+  }
+}
+
+main {
+
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+
+
+  .card {
+  border: 1px solid hsl(0, 0%, 0%, 0.1);
+  border-radius: 8px; /* Mas pabilog nang kaunti */
+  text-align: center;
+  padding: 15px;
+  width: 200px; /* Fix ang width para pantay-pantay */
+  transition: box-shadow 0.3s ease; /* Smooth transition */
+  background-color: white;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Anino kapag tinatapatan */
+  }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  .profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; 
+  }
+
+}
