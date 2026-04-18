@@ -1,6 +1,8 @@
 import './index.css'
+import {useNavigate} from 'react-router-dom';
 
 function Navigation() {
+    const navigate = useNavigate();
     return(
         <nav>
             <div className='Flex-Align-Css'>
@@ -16,8 +18,8 @@ function Navigation() {
                 </ul>
             </div>
 
-                <button>
-                     Hire Me!
+                <button onClick={() => navigate('/')}>
+                     Log out
                 </button>
             </div>
             

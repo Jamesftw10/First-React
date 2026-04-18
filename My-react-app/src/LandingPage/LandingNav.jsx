@@ -1,10 +1,9 @@
-import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import styles from './Landing.module.css'
 import LayersPlusIcon from './LeyersPlus.jsx'
-import LogInPortal from './LoginHolder/LogInPortal.jsx'
 
 function LandingNav() {
-  const [showLogin, setShowLogin] = useState(false)
+    const navigate = useNavigate()
     return (
         <nav className={styles.navbar}>
             <div className={styles.container}>
@@ -23,12 +22,11 @@ function LandingNav() {
                     </ul>
                 </div>
                 <div>
-                    <button onClick={() => setShowLogin(true)}>
+                    <button onClick={() => navigate('/portalpage')}>
                         SignIn
                     </button>
                 </div>
             </div>
-            {showLogin && <LogInPortal />}
         </nav>
     )
 }
