@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import styles from './Landing.module.css'
 import LayersPlusIcon from './LeyersPlus.jsx'
+import LogInPortal from './LoginHolder/LogInPortal.jsx'
 
 function LandingNav() {
+  const [showLogin, setShowLogin] = useState(false)
     return (
         <nav className={styles.navbar}>
             <div className={styles.container}>
@@ -20,11 +23,12 @@ function LandingNav() {
                     </ul>
                 </div>
                 <div>
-                    <button>
+                    <button onClick={() => setShowLogin(true)}>
                         SignIn
                     </button>
                 </div>
             </div>
+            {showLogin && <LogInPortal />}
         </nav>
     )
 }
