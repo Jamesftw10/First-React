@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserCheck, LockKeyhole, Eye, EyeOff } from 'lucide-react';
 import styles from './LogInPortal.module.css';
+import data from './data.js';
 
 function LogInPortal() {
     const navigate = useNavigate();
@@ -15,10 +16,13 @@ function LogInPortal() {
         e.preventDefault();
         
         // Dito mo ilalagay ang logic mo (e.g., checking sa data.js)
-        if (email === "admin" && password === "123") {
+        const user = data.find(u => u.email === email && u.password === password);
+        if (user) {
             navigate('/app');
         } else {
             alert("Invalid credentials");
+            setEmail("");
+            setPassword("");
         }
     };
 
