@@ -1,4 +1,4 @@
-import Navigation from "./NavigationBar.jsx";
+import Navigation from "./Navigation/NavigationBar.jsx"
 import ProfileCard from "./ProfileCard.jsx"
 
 

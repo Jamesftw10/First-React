@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   align-items: center;
+  border-radius: 30px;
 }
 
 .logo {
@@ -19,19 +20,17 @@
   align-items: center;
 }
 
-
-
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px 20px;
   background-color: #f8f8f8;
   border-bottom: 1px solid #e0e0e0;
-     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 60%;
+  border-radius: 0px 0px 30px 30px;
 }
 
 .description {
@@ -41,10 +40,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   
 }
 
 .name {
-     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

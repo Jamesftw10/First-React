@@ -1,31 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
+  z-index: 1000;
   border-bottom: 1px solid hsl(0, 0%, 0%, 0.1);
 
-  ul li {
+  li {
     text-decoration: none;
     list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 
   ul {
     display: flex;
     font-family: Arial, sans-serif;
-    cursor: pointer;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .Flex-Align-Css {
-    display: flex;
     justify-content: space-around;
-    height: 100%;
+    width: 100%;
     align-items: center;
-
   }
+
+  li {
+    cursor: pointer;
+  }
+
 
   h2 {
     font-family: Arial, sans-serif;

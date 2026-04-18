@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bungee&display=swap');
+
+.landingMain {
+    padding: 50px;
+    height: 200vh;
+    
+
+
+h1 {
+    text-align: center;
+    font-family: 'Bitcount Grid Double', monospace;
+    text-align: center;
+}
+p {
+    font-family: Roboto, cursive;
+    font-size: 3em;
+    font-weight: 400;
+}
+}

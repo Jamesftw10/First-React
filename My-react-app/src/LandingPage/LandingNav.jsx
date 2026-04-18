@@ -1,25 +1,24 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './Landing.module.css'
-import LayersPlusIcon from './LeyersPlus.jsx'
+import { LayersPlus } from 'lucide-react';
+import FeaturedLanding from './FeaturedLanding';
+import LandingNavMain from './LandingMainCategory/LandingNavMain';
 
 function LandingNav() {
     const navigate = useNavigate()
     return (
+        <>
         <nav className={styles.navbar}>
             <div className={styles.container}>
                 <div className={styles.leftSide}>
-                   <LayersPlusIcon/>
+                    <LayersPlus />
                     <div>
                         <h2 className={styles.name}>Add Platform</h2>
                         <p className={styles.description}>Add your friends</p>
                     </div>
                 </div>
                 <div>
-                    <ul>
-                        <li>Features</li>
-                        <li>Services</li>
-                        <li>About</li>
-                    </ul>
+                    <FeaturedLanding />
                 </div>
                 <div>
                     <button onClick={() => navigate('/portalpage')}>
@@ -28,6 +27,8 @@ function LandingNav() {
                 </div>
             </div>
         </nav>
+        <LandingNavMain />
+        </>
     )
 }
 
