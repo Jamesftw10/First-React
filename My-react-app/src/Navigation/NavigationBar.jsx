@@ -1,10 +1,11 @@
 import './index.css'
+import styles from './NavigationBar.module.css'
 import {useNavigate} from 'react-router-dom';
 
 function Navigation() {
     const navigate = useNavigate();
     return(
-        <nav>
+        <nav className={styles.nav}>
             <div className='Flex-Align-Css'>
                 <h2>Add Friend</h2>
             
