@@ -10,7 +10,7 @@ function LandingNav() {
                 <div className={styles.leftSide}>
                    <LayersPlusIcon/>
                     <div>
-                        <h2>Add Platform</h2>
+                        <h2 className={styles.name}>Add Platform</h2>
                         <p className={styles.description}>Add your friends</p>
                     </div>
                 </div>

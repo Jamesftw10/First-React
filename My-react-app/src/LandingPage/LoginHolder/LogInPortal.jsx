@@ -16,7 +16,7 @@ function LogInPortal() {
         e.preventDefault();
         
         // Dito mo ilalagay ang logic mo (e.g., checking sa data.js)
-        const user = data.find(u => u.email === email && u.password === password);
+        const user = data.find(u => u.username === email && u.password === password);
         if (user) {
             navigate('/app');
         } else {
