@@ -21,7 +21,7 @@ function LandingNav() {
                     <FeaturedLanding />
                 </div>
                 <div>
-                    <button onClick={() => navigate('/portalpage')}>
+                    <button className={styles.Signin} onClick={() => navigate('/portalpage')}>
                         SignIn
                     </button>
                 </div>

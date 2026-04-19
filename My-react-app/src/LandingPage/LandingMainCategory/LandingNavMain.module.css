@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bungee&display=swap');
 
+:global(:root) {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #a8a1a1fb;
+    --text-color: #333;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', cursive;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 .landingMain {
     padding: 50px;
     height: 200vh;
-    
+    padding-top: 100px;
 
 
 h1 {
@@ -17,3 +33,14 @@ p {
     font-weight: 400;
 }
 }
+
+/* Resources Landing Page */
+.resources {
+    padding: 50px;
+    height: 100vh;
+}
+
+    .title {
+        font-family: 'Roboto', cursive;
+        text-align: center;
+    }

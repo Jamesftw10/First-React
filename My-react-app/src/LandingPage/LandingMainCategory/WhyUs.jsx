@@ -10,7 +10,7 @@ function WhyUs({ id = "why-us" }) {
     }, []);
 
     return (
-        <section id={id}>
+        <section id={id} style={{marginTop: "100px"}}>
             <h1 data-aos="fade-up">Why Us?</h1>
 
             <div
