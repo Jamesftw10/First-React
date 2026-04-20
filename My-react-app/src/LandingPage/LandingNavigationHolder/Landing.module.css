@@ -59,3 +59,17 @@
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}

@@ -1,17 +1,11 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import layersPlus from "../../assets/layers-plus.svg";
+import styles from "./LandingNavMain.module.css";
 
 function WhyUs({ id = "why-us" }) {
 
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
-
     return (
-        <section id={id} style={{marginTop: "100px"}}>
-            <h1 data-aos="fade-up">Why Us?</h1>
+        <section id={id} className={styles.section} data-aos="fade-up">
+            <h1 data-aos="fade-up" data-aos-delay="100">Why Us?</h1>
 
             <div
                 style={{
@@ -21,11 +15,11 @@ function WhyUs({ id = "why-us" }) {
                     alignItems: "center",
                 }}
             >
-                <p style={{ marginLeft: "30px" }} data-aos="fade-right">
+                <p style={{ marginLeft: "30px" }} data-aos="fade-right" data-aos-delay="200">
                     We make it easy to connect with your friends in one place. Our platform is fast, simple, and designed to help you stay connected without the hassle.
                 </p>
 
-                <div style={{ display: "flex", justifyContent: "center" }} data-aos="zoom-in">
+                <div style={{ display: "flex", justifyContent: "center" }} data-aos="zoom-in" data-aos-delay="300">
                     <img src={layersPlus} alt="Error Image" />
                 </div>
             </div>

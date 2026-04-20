@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import styles from './Landing.module.css'
 import { LayersPlus } from 'lucide-react';
 import FeaturedLanding from './FeaturedLanding';
-import LandingNavMain from './LandingMainCategory/LandingNavMain';
+import LandingNavMain from '../LandingMainCategory/LandingNavMain';
 
 function LandingNav() {
     const navigate = useNavigate()

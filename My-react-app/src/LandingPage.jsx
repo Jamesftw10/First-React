@@ -1,4 +1,4 @@
-import LandingNav from "./LandingPage/LandingNav.jsx"
+import LandingNav from "./LandingPage/LandingNavigationHolder/LandingNav.jsx";
 
 function LandingPage() {
     return (
